@@ -22,7 +22,10 @@ by clicking the 'Authorize' button top right
 - Now you have access to make all the CRUD operations with items endpoints
 
 ## Testing
-- To run pytests you have to create a database 'inventory' and provide proper credentials in the 
+- The settings for pytests are stored in .env.testing 
+- To run pytests you have to create a local database 'inventory' and provide proper credentials in the 
 '.env.testing' file for:
 ```SQLALCHEMY_DATABASE_URL=postgresql://postgres:admin@localhost/inventory```
 - After, go to the 'tests' folder and run ```pytest``` in your terminal
+
+```Note: The settings for production env are stored in .env and production database is used using Docker```
